@@ -19,6 +19,8 @@
 </head>
 
 <body class="{% block body_class %}{% endblock %}">
+  {% include 'includes/pre_loader.html' %}
+
   <!-- Navbar do Bootstrap -->
   {% include 'layouts/navbar.html' %}
   {% block content %}

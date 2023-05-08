@@ -1,0 +1,60 @@
+<div class="loader"></div>
+
+<style>
+    .loader {
+        /* Statement básico do pre-loader */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(27, 25, 33);
+        transition: opacity 0.75s, visibility 0.75s;
+
+    }
+
+    /* Esconder o pre-loader depois do seu uso */
+    .loader--hiden {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    /* Responsável pelas animações e formato do pre-loader */
+    .loader::after {
+        content: "";
+        width: 75px;
+        height: 75px;
+        border: 15px solid #dddddd;
+        border-top-color: #569ade;
+        border-radius: 50%;
+        animation: loading 0.75s ease infinite;
+    }
+
+    /* Frames do pre-loader */
+    @keyframes loading {
+        from {
+            transform: rotate(0turn)
+        }
+
+        to {
+            transform: rotate(1turn)
+        }
+    }
+</style>
+
+<script>
+    // Mecânica que esconde o loader após o carregamento da página
+    window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader"); // Jogando a div em uma variável pra facilitar
+
+        loader.classList.add("loader--hiden");
+
+        // Remover o loader do HTML depois da página ser carregada.
+        loader.addEventListener("transitionend", () => {
+            document.body.removeChild(loader);
+        });
+    });
+</script>
