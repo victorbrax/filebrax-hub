@@ -11,6 +11,9 @@ The Filebrax Hub (which doesn't share any similarity with my nickname) is a full
 [![Flask Application](https://img.shields.io/badge/Flask-gray.svg)](https://shields.io/)
 [![Bootstrap Framework](https://img.shields.io/badge/Bootstrap-red.svg)](https://shields.io/)
 [![Blueprints Routes](https://img.shields.io/badge/Blueprints-blue.svg)](https://shields.io/)
+[![Jinja2](https://img.shields.io/badge/Jinja2-gray.svg)](https://shields.io/)
+[![Javascript](https://img.shields.io/badge/Javascript-yellow.svg)](https://shields.io/)
+
 
 ## Demo 🖼️
 
@@ -38,9 +41,11 @@ To run the project locally:
 
 ## Technologies Used 🖥️
 * [Flask](https://flask.palletsprojects.com/en/2.3.x/)
-* [JavaScript](https://js.org)
 * [Bootstrap](http://getbootstrap.com)
 * [Blueprints](https://flask.palletsprojects.com/en/1.1.x/blueprints/)
+* [Jinja2](https://palletsprojects.com/p/jinja/)
+* [JavaScript](https://js.org)
+
 
 ## Considerations 📝
 
