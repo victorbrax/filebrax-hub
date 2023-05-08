@@ -1,6 +1,9 @@
+<div align="center">
+<img align="center" width="260rem" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/main/docs/logo-github.png">
+</div>
+
 # Greetings! ⚜
 
-<img align="right" width="290rem" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/main/docs/logo-github.png">
 The Filebrax Hub (which doesn't share any similarity with my nickname) is a fully functional project for handling file uploads and downloads on a server. It has been developed using Flask as its Micro Framework, with the goal of providing an efficient internal environment. Moreover, thanks to its well-structured architecture using Blueprints, it allows for easy integration of additional backend modules (e.g., Tracker Tickets, a tracking and management application that I plan to release soon).
 
 ## Demo 🚧
