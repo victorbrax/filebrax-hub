@@ -9,7 +9,15 @@ The Filebrax Hub (which doesn't share any similarity with my nickname) is a full
 ## Demo 🚧
 
 Soon, I will make available the main pages of the application in a non-functional way using the GitHub Pages feature for non-experienced programming users.
+</br>
 
+<div align="center">
+<img height="240rem" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/main/docs/presentation.gif">
+<img height="240rem" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/main/docs/not_found.gif">
+</div>
+<div align="center">
+<img height="240rem" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/main/docs/download.gif">
+</div>
 
 ## Run Project Locally 🏠
 
