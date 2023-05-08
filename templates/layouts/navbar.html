@@ -1,0 +1,28 @@
+{% block navbar %}
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <img class="mx-2" src="/static/images/filebrax_icon.svg" alt="logotipo-filebrax" style="height: 2rem">
+      <a class="navbar-brand" href="{{ url_for('home.home_page') }}">Filebrax Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link{% if request.endpoint == 'home.home_page' %} active{% endif %}" href="{{ url_for('home.home_page') }}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link{% if request.endpoint == 'uploads.uploads_page' %} active{% endif %}" href="{{ url_for('uploads.uploads_page') }}">Uploads</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link{% if request.endpoint == 'menu.menu_page' %} active{% endif %}" href="{{ url_for('menu.menu_page') }}">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Reportar Problemas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+{% endblock %}

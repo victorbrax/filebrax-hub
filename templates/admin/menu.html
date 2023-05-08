@@ -1,0 +1,42 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}
+Projetos
+{% endblock %}
+{% block content %}
+<!-- Identificação do container -->
+<div class="container">
+  <div class="row d-flex mx-4 my-5 justify-content-center align-items-center">
+    <i class="bi bi-box-seam-fill mt-1 mr-2" style="font-size: 2.6rem; color: rgb(255, 209, 27);"></i>
+    <h1 class="mb-0">Projetos Disponíveis</h1>
+  </div>
+  
+  <div class="col-md-6 p-3 mx-auto" id="projects-table">
+    <!-- Tabela de Projetos  -->
+    <table class="table table-bordered table-hover table-sm">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col" class="text-center">Última Atualização</th>
+          <th scope="col" class="text-center">Tamanho</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for project in projects %}
+        <tr>
+          <td>{{ loop.index }}</td>
+          <td><a href="{{ url_for('downloads.downloads_page', project=project.name) }}">{{project.name }}</a></td>
+          <td class="text-center">{{ format_date(project.modified) }}</td>
+          <td class="text-center">{{ format_size(project.size) }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <!-- Fim da Tabela de Projetos -->
+  </div>
+</div>
+</div>
+
+
+{% endblock %}

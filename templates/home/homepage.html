@@ -1,0 +1,34 @@
+{% extends 'layouts/base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block body_class %}home-page{% endblock %}
+
+{% block content %}
+<div class="container d-flex flex-column justify-content-center align-items-center" style="height: 70%;">
+
+  <div class="d-flex align-items-center my-3">
+    <img class="mx-3" src="/static/images/filebrax_icon.svg" alt="logotipo-filebrax" style="height: 3rem">
+    <h1>Filebrax Hub</h1>
+  </div>
+
+  <div>
+    <p class="lead">Vá em frente e faça o Upload de seus relatórios, o resto é com a gente.</p>
+  </div>
+
+  <div class="d-flex align-items-center">
+    <a type="button" href="{{ url_for('uploads.uploads_page') }}" class="btn btn-dark mx-2">Subir um Projeto</a>
+    <a type="button" href="{{ url_for('menu.menu_page') }}" class="btn btn-dark mx-2">Encontrar um Projeto</a>
+  </div>
+</div>
+
+
+<!-- Copyright -->
+<div class="text-center p-4 fixed-bottom" style="background-color: rgba(0, 0, 0, 0.505);">
+  Feito com muito prestígio por
+  <a class="text-reset fw-bold" href="https://github.com/victorbrax">Víctor Gomes</a>
+  🐍
+</div>
+
+</footer>
+<!-- Footer -->
+{% endblock %}

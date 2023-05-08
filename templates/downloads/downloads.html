@@ -1,0 +1,126 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}
+Download de Projetos
+{% endblock %}
+{% block content %}
+
+<!-- Identificação do container -->
+<div class="container">
+  <div class="row mt-5 justify-content-center d-flex align-items-center">
+    <i class="bi bi-cloud-arrow-down-fill mt-1 mr-2" style="font-size: 2.6rem; color: #569ade;"></i>
+    <h1 class="mb-0">Download dos Arquivos</h1>
+  </div>
+  <!-- Informações do Projeto -->
+  <div class="row d-flex mb-3 justify-content-center align-items-center">
+    <!-- Identificação do Projeto -->
+    <i class="bi bi-box mr-2 mb-1" style="font-size: 1.8rem; color: rgb(255, 255, 255);"></i>
+    <h4 class="mr-2">{{ project }}</h4>
+  </div>
+
+  <!-- Botões de Collapse -->
+  <div class="d-flex justify-content-center" id="collapse-buttons-group">
+    <button class="btn btn-info mx-2 mb-4" type="button" data-toggle="collapse" data-target="#multiCollapseExample1"
+      aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-folder mr-1"></i>Uploads</button>
+
+    <button class="btn btn-outline-light mx-2 mb-4" type="button" data-toggle="collapse" data-target=".multi-collapse"
+      aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2"><i
+        class="bi bi-chevron-double-down"></i></button>
+
+    <button class="btn btn-warning mx-2 mb-4" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"
+      aria-expanded="false" aria-controls="multiCollapseExample2"><i class="bi bi-folder mr-1"></i>Downloads</button>
+  </div>
+
+  <!-- Mecânicas do Collapse -->
+  <div class="row">
+    <div class="col m-2">
+      <div class="collapse multi-collapse show" id="multiCollapseExample1">
+        <div class="card card-body">
+
+          <!-- Migalhas de Pão do Diretório Uploads -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">Relatórios já Processados</li>
+              <!-- Botãozinho de Download do .zip -->
+              <li class="ml-auto">
+                <a href="{{ url_for('downloads.zip', project=project, id=1) }}"
+                  class="btn btn-success btn-sm mb-0"><i class="bi bi-download mr-2"></i>.zip</a>
+              </li>
+            </ol>
+          </nav>
+
+          <!-- Tabela do Diretório Uploads -->
+          <table class="table table-striped table-bordered table-hover table-sm">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col" class="text-center">Atualização</th>
+                <th scope="col" class="text-center">Tamanho</th>
+                <th scope="col">&nbsp;</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for upload in uploads %}
+              <tr>
+                <td>{{ loop.index }}</td>
+                <td><a href="{{ upload.url }}">{{ upload.name }}</a></td>
+                <td class="text-center">{{ format_date(upload.modified) }}</td>
+                <td class="text-center">{{ format_size(upload.size) }}</td>
+                <td><a class="btn btn-success btn-sm" href="{{ upload.url }}" download><i class="bi bi-download"></i></a></td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+          <!-- Fim da Tabela do Diretório Downloads -->
+        </div>
+      </div>
+    </div>
+
+    <div class="col m-2">
+      <div class="collapse multi-collapse show" id="multiCollapseExample2">
+        <div class="card card-body">
+
+          <!-- Migalhas de Pão do Diretório Downloads -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">Relatórios não Processados</li>
+              <!-- Botãozinho de Download do .zip -->
+              <li class="ml-auto">
+                <a href="{{ url_for('downloads.zip', project=project, id=2) }}" class="btn btn-danger btn-sm mb-0"><i
+                    class="bi bi-download mr-2"></i>.zip</a>
+              </li>
+            </ol>
+          </nav>
+
+          <!-- Tabela do Diretório Downloads -->
+          <table class="table table-striped table-bordered table-hover table-sm">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col" class="text-center">Atualização</th>
+                <th scope="col" class="text-center">Tamanho</th>
+                <th scope="col">&nbsp;</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for download in downloads %}
+              <tr>
+                <td>{{ loop.index }}</td>
+                <td><a href="{{ download.url }}">{{ download.name }}</a></td>
+                <td class="text-center">{{ format_date(download.modified) }}</td>
+                <td class="text-center">{{ format_size(download.size) }}</td>
+                <td><a class="btn btn-success btn-sm" href="{{ download.url }}" download><i class="bi bi-download"></i></a></td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+          <!-- Fim da Tabela do Diretório Downloads -->
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Fim da Mecânica do Collapse -->
+</div>
+{% endblock %}

@@ -1,0 +1,1 @@
+from apps.admin.routes import menu
