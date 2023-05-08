@@ -12,8 +12,8 @@ Soon, I will make available the main pages of the application in a non-functiona
 </br>
 
 <div align="center">
-<img height="45vh" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/main/docs/presentation.gif">
-<img height="45vh" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/main/docs/not_found.gif">
+<img height="150vh" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/main/docs/presentation.gif">
+<img height="150vh" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/main/docs/not_found.gif">
 </div>
 <div align="center">
 <img height="240rem" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/main/docs/download.gif">
