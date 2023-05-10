@@ -1,12 +1,12 @@
 <div align="center">
   
-[![Python](https://img.shields.io/badge/REAL_PROJECT-important.svg)](https://shields.io/)
-[![Python](https://img.shields.io/badge/Python-informational.svg)](https://shields.io/)
-[![Jinja2](https://img.shields.io/badge/Jinja2-green.svg)](https://shields.io/)
-[![Flask](https://img.shields.io/badge/Flask-gray.svg)](https://shields.io/)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-red.svg)](https://shields.io/)
-[![Blueprints](https://img.shields.io/badge/Blueprints-blue.svg)](https://shields.io/)
-[![Javascript](https://img.shields.io/badge/Javascript-yellow.svg)](https://shields.io/)
+[![Python](https://img.shields.io/badge/REAL_PROJECT-important.svg)]()
+[![Python](https://img.shields.io/badge/Python-informational.svg)]()
+[![Jinja2](https://img.shields.io/badge/Jinja2-green.svg)]()
+[![Flask](https://img.shields.io/badge/Flask-gray.svg)]()
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-red.svg)]()
+[![Blueprints](https://img.shields.io/badge/Blueprints-blue.svg)]()
+[![Javascript](https://img.shields.io/badge/Javascript-yellow.svg)]()
 </div>
 
 <div align="center">
