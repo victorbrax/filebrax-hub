@@ -1,4 +1,13 @@
-<img height="20rem" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/0ccc762f4aba7acf9ce7d6f38990cf6ca5a10f4b/docs/BrazilFlag.svg" alt="brazilflag">
+<div align="center">
+  <table>
+  <tr>
+    <td><img height="24rem" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/c65a8072294d7b044a5909e03bcb0e7a7dcf6e3c/docs/br.svg" alt="brazilflag"></td>
+    <td>Você fala Português? Por favor, <a href="https://github.com/victorbrax">clique aqui</a>.</td>
+  </tr>
+</table>
+</div>
+
+
 
 
 <div align="center">
@@ -11,6 +20,7 @@
 [![Blueprints](https://img.shields.io/badge/Blueprints-blue.svg)]()
 [![Javascript](https://img.shields.io/badge/Javascript-yellow.svg)]()
 </div>
+
 
 <div align="center">
 <img width="260rem" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/main/docs/logo-github.png">
