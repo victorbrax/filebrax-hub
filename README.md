@@ -1,4 +1,4 @@
-<div align="right">
+<div align="center">
   <table>
   <tr>
     <td><img height="24rem" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/c65a8072294d7b044a5909e03bcb0e7a7dcf6e3c/docs/br.svg" alt="brazilflag"></td>
