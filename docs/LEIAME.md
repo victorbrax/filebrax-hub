@@ -68,7 +68,7 @@ Garanta que você tenha o [Python](https://python.org/downloads) instalado para 
 ## Considerações 📝
 
 * O sistema não possui um módulo de autenticação, mas acredito que devido à arquitetura modular dos Blueprints, não seria difícil de implementar. Se você se sentir confortável, pode me enviar uma solicitação de pull request para o projeto.
-* Existe um projeto chamado "FORCE404" de propósito; você pode tentar acessá-lo para testar se o redirecionamento do manipulador de erros do Flask está funcionando corretamente.
+* Existe um projeto chamado "_FORCE404_" de propósito; você pode tentar acessá-lo para testar se o redirecionamento do manipulador de erros do Flask está funcionando corretamente.
 * O ambiente de Uploads possui validação para "usuários portas" com JavaScript, Jinja2 e Flash Messages.
 
 ### Atenção! ⚠️
