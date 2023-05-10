@@ -12,7 +12,7 @@
 
 <div align="center">
   
-[![Python](https://img.shields.io/badge/REAL_PROJECT-important.svg)]()
+[![Project](https://img.shields.io/badge/REAL_PROJECT-important.svg)]()
 [![Python](https://img.shields.io/badge/Python-informational.svg)]()
 [![Jinja2](https://img.shields.io/badge/Jinja2-green.svg)]()
 [![Flask](https://img.shields.io/badge/Flask-gray.svg)]()
