@@ -1,9 +1,17 @@
-
-
+<div align="center">
+  
+[![Python](https://img.shields.io/badge/REAL_PROJECT-important.svg)](https://shields.io/)
 [![Python](https://img.shields.io/badge/Python-informational.svg)](https://shields.io/)
+[![Jinja2](https://img.shields.io/badge/Jinja2-green.svg)](https://shields.io/)
+[![Flask](https://img.shields.io/badge/Flask-gray.svg)](https://shields.io/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-red.svg)](https://shields.io/)
+[![Blueprints](https://img.shields.io/badge/Blueprints-blue.svg)](https://shields.io/)
+[![Javascript](https://img.shields.io/badge/Javascript-yellow.svg)](https://shields.io/)
+</div>
 
 <div align="center">
 <img width="260rem" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/main/docs/logo-github.png">
+</div>
 </div>
 <p align="center">By <strong>Víctor Gomes</strong></p>
 
@@ -12,12 +20,6 @@
 The Filebrax Hub (which doesn't share any similarity with my nickname) is a fully functional project for handling file uploads and downloads on a server. It has been developed using Flask as its Micro Framework, with the goal of providing an efficient internal environment. Moreover, thanks to its well-structured architecture using Blueprints, it allows for easy integration of additional backend modules (e. g., [Tracker Tickets](https://github.com/victorbrax/TrackerG), a tracking and management application that I plan to release soon).
 </br>
 </br>
-[![Python](https://img.shields.io/badge/Python-green.svg)](https://shields.io/)
-[![Flask Application](https://img.shields.io/badge/Flask-gray.svg)](https://shields.io/)
-[![Bootstrap Framework](https://img.shields.io/badge/Bootstrap-red.svg)](https://shields.io/)
-[![Blueprints Routes](https://img.shields.io/badge/Blueprints-blue.svg)](https://shields.io/)
-[![Jinja2](https://img.shields.io/badge/Jinja2-gray.svg)](https://shields.io/)
-[![Javascript](https://img.shields.io/badge/Javascript-yellow.svg)](https://shields.io/)
 
 
 ## Demo 🖼️
