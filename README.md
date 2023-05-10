@@ -69,7 +69,7 @@ Assumes local installation of [Python](https://python.org/downloads) to run the 
 ## Considerations 📝
 
 * The system doesn't have an authentication module, but I believe that due to the modular architecture of Blueprints, it wouldn't be difficult to implement. If you feel comfortable, you can send me a pull request for the project.
-* There is a deliberate project called "FORCE404"; you can try accessing it to test if the Flask error handler redirection is working correctly.
+* There is a deliberate project called "_FORCE404_"; you can try accessing it to test if the Flask error handler redirection is working correctly.
 * The Uploads environment has validation for "port users" with JavaScript, Jinja2 and Flash Messages.
 
 ### Warning ⚠️
