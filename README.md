@@ -1,3 +1,7 @@
+
+
+[![Python](https://img.shields.io/badge/Python-informational.svg)](https://shields.io/)
+
 <div align="center">
 <img width="260rem" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/main/docs/logo-github.png">
 </div>
