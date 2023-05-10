@@ -1,12 +1,13 @@
-<div align="center">
-</div>
-
-<table>
+<div align="right">
+  <table>
   <tr>
-    <td><img height="20rem" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/189b5cdf40b1beb3240645362f5dd2eebff66bb8/docs/br.svg" alt="brazilflag"></td>
-    <td>Você fala Português? Por favor, clique aqui.</td>
+    <td><img height="24rem" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/c65a8072294d7b044a5909e03bcb0e7a7dcf6e3c/docs/br.svg" alt="brazilflag"></td>
+    <td>Você fala Português? Por favor, <a href="https://github.com/victorbrax">clique aqui</a>.</td>
   </tr>
 </table>
+</div>
+
+
 
 
 <div align="center">
