@@ -1,52 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
+:root {
+  --background_dark: #1b1b27;
+  --background_light: #2e303e;
+  --ultra_dark: #14141b;
+}
+
+html,
 body {
-    background-color: rgb(27, 25, 33);
-    color: white;
-  }
-  
-  #tale {
-    background-color: blue;
-  }
-  
-  td {
-    font-size: 12px;
-  }
-  
-  .breadcrumb-item {
-    color: rgb(109, 109, 109);
-  }
-  
-  .breadcrumb-item.active {
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-  }
-  
-  #folderpath {
-    color: black;
-  }
-  
-  #projects-table {
-    background-color: white;
-    border-radius: 0.5rem;
-  }
-  
-  html,
-  body {
-    height: 100%;
-    background-color: #2b2b31;
-  }
-  body {
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 1px 1px rgba(0,0,0,.2);
-  }
-  
-  .home-page {
-    background-image: url("/static/images/home_background.jpg");
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.3);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    text-shadow: 0 1px 1px rgba(0,0,0,.6);
-  }
-  
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  color: #fff;
+  height: 100%;
+  background-color: var(--background_dark);
+}
+
+td {
+  font-size: 0.8rem;
+}
+
+.card {
+  background: var(--ultra_dark);
+}
+
+ol.breadcrumb {
+  background: var(--background_light);
+}
+
+.breadcrumb-item {
+  color: rgb(255, 255, 255);
+}
+
+
+#folderpath {
+  color: black;
+}
+
+#projects-table {
+  background-color: var(--ultra_dark);
+  border-radius: 0.5rem;
+}
+
+
+
+.home-page {
+  background-image: url("/static/images/home_background.jpg");
+  box-shadow: inset 0 0 300rem rgba(0, 0, 0, 0.952);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .6);
+}
