@@ -15,8 +15,14 @@
           <li class="nav-item">
             <a class="nav-link{% if request.endpoint == 'uploads.uploads_page' %} active{% endif %}" href="{{ url_for('uploads.uploads_page') }}">Uploads</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link{% if request.endpoint == 'menu.menu_page' %} active{% endif %}" href="{{ url_for('menu.menu_page') }}">Projetos</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projetos
+            </a>
+            <div class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{{ url_for('menu.downloads_menu') }}">Downloads</a>
+              <a class="dropdown-item" href="{{ url_for('menu.uploads_menu') }}">Uploads</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" target="_blank" href="https://github.com/victorbrax/filebrax-hub/issues/new" tabindex="-1" aria-disabled="true">Reportar Problemas</a>

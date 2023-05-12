@@ -7,8 +7,8 @@ Projetos
 <!-- Identificação do container -->
 <div class="container">
   <div class="row d-flex mx-4 my-5 justify-content-center align-items-center">
-    <i class="bi bi-box-seam-fill mt-1 mr-2" style="font-size: 2.6rem; color: rgb(255, 209, 27);"></i>
-    <h1 class="mb-0">Projetos Disponíveis</h1>
+    <i class="bi bi-box mt-1 mr-2" style="font-size: 2.6rem; color: rgb(255, 209, 27);"></i>
+    <h1 class="mb-0">Uploads Disponíveis</h1>
   </div>
   
   <div class="col-md-6 p-3 mx-auto" id="projects-table">
@@ -26,14 +26,14 @@ Projetos
         {% for project in projects %}
         <tr>
           <td>{{ loop.index }}</td>
-          <td><a href="{{ url_for('downloads.downloads_page', project=project.name) }}">{{project.name }}</a></td>
+          <td>{{project.name }}</td>
           <td class="text-center">{{ format_date(project.modified) }}</td>
           <td class="text-center">{{ format_size(project.size) }}</td>
         </tr>
         {% endfor %}
       </tbody>
     </table>
-    <p>Não encontrou o seu projeto? <a target="_blank" href="https://github.com/victorbrax/filebrax-hub/issues/new">Reporte o problema aqui.</a></p>
+    <p>Só é possível baixar <a href="{{url_for('menu.downloads_menu')}}">Uploads já processados.</a></p>
     <!-- Fim da Tabela de Projetos -->
   </div>
 </div>
