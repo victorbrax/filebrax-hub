@@ -41,11 +41,12 @@ Soon, I will make available the main pages of the application in a non-functiona
 </br>
 
 <div align="center">
-<img height="220vh" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/main/docs/presentation.gif">
-<img height="220vh" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/main/docs/not_found.gif">
+<img height="220vh" src="https://github.com/victorbrax/filebrax-hub/blob/main/docs/gifs/navigation.gif?raw=true">
+<img height="220vh" src="https://github.com/victorbrax/filebrax-hub/blob/main/docs/gifs/validacao.gif?raw=true">
 </div>
 <div align="center">
-<img height="220vh" src="https://raw.githubusercontent.com/victorbrax/filebrax-hub/main/docs/download.gif">
+<img height="220vh" src="https://github.com/victorbrax/filebrax-hub/blob/main/docs/gifs/collapse.gif?raw=true">
+<img height="220vh" src="https://github.com/victorbrax/filebrax-hub/blob/main/docs/gifs/404.gif?raw=true">
 </div>
 
 ## Run Project Locally 🏠
