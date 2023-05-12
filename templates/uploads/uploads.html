@@ -5,17 +5,18 @@
 <!-- Identificação do container -->
 <div class="container">
   <div class="row mx-4 my-5 justify-content-center d-flex align-items-center">
-    <i class="bi bi-cloud-arrow-up-fill mt-1 mr-2" style="font-size: 2.6rem; color: #569ade;"></i>
+    <i class="bi bi-cloud-arrow-up-fill mt-1 mr-2" style="font-size: 2.6rem; color: #FCCC0D;"></i>
     <h1 class="mb-0">Upload de Projetos</h1>
   </div>
 <!-- Formulário de Upload -->
-  <div class="col-md-6 p-3 mx-auto">
+  <div class="col-md-6 p-3 mx-auto card card-body">
+    <h5>Qual o nome do projeto?</h5>
     <form method="POST" action="/uploads/upload_project" enctype="multipart/form-data" onsubmit="return validateForm()">
       <div class="form-group">
-        <input type="text" placeholder="Insira o nome do projeto sem caracteres especiais" class="form-control"
+        <input type="text" placeholder="Não deve conter caracteres especiais ou espaços." class="form-control"
           id="inputFolderName" name="folder_name" required>
 
-        <!-- Validação adicional com Jinja2 para usuários portas -->
+        <!-- Validação adicional com Jinja2 para usuários insistentes -->
           {% with messages = get_flashed_messages(with_categories=true) %}
           {% if messages %}
 
@@ -40,7 +41,7 @@
 
       <div class="text-center" id="btn-group">
         <button type="reset" class="btn btn-secondary mr-1">Limpar</button>
-        <button type="submit" class="btn btn-success ml-1">Enviar</button>
+        <button type="submit" class="btn btn-primary ml-1">Enviar</button>
       </div>
     </form>
   </div>

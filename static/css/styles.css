@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 :root {
-  --background_dark: #1b1b27;
-  --background_light: #2e303e;
-  --ultra_dark: #14141b;
+  --logo-blue: #4082C4;
+  --logo-yellow: #FCCC0D;
+  --background-dark: #1b1b27;
+  --background-light: #2e303e;
+  --ultra-dark: #14141b;
 }
 
 html,
@@ -13,7 +15,18 @@ body {
   text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
   color: #fff;
   height: 100%;
-  background-color: var(--background_dark);
+  background-color: var(--background-dark);
+}
+
+a {
+  color: white;
+  transition: color .3s ease-in-out;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--logo-yellow);
+  text-decoration: none;
 }
 
 td {
@@ -21,24 +34,16 @@ td {
 }
 
 .card {
-  background: var(--ultra_dark);
+  background: var(--ultra-dark);
 }
 
 ol.breadcrumb {
-  background: var(--background_light);
+  background: var(--background-light);
 }
 
-.breadcrumb-item {
-  color: rgb(255, 255, 255);
-}
-
-
-#folderpath {
-  color: black;
-}
 
 #projects-table {
-  background-color: var(--ultra_dark);
+  background-color: var(--ultra-dark);
   border-radius: 0.5rem;
 }
 
