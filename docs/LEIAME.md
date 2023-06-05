@@ -54,7 +54,7 @@ Garanta que você tenha o [Python](https://python.org/downloads) instalado para 
 
 * Clone ou faça um Fork desse repositório.
 * Crie um ambiente virtual. Você pode fazer isso usando `python -m venv venv no terminal`.
-* Instale as bibliotecas necessárias. Se você utiliza o pip para gerenciar seus pacotes, utilize pip install -r requirements.txt.
+* Instale as bibliotecas necessárias. Se você utiliza o pip para gerenciar seus pacotes, utilize `pip install -r requirements.txt`.
 * Execute `python app.py`
 * Por padrão, o aplicativo será executado no seguinte endereço: `127.0.0.1:8000`, com o modo de depuração ativado.
 
